@@ -1,3 +1,3 @@
 # getClusters
 
-This is package for methylaion cluster
+This is package for DNA methylaion clustering 
