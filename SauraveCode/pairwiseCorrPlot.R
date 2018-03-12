@@ -5,7 +5,7 @@
 # Output: 
 #   correlation heatmap, a vector of pairwise correlations
 
-pairwiseCorrPlot <- function (cpg.set, sample.start, sample.end, plot) {
+pairwiseCorrPlot <- function(cpg.set, sample.start, sample.end, plot){
   
   # cpg.set <- t
   # sample.start <- 3
@@ -17,7 +17,7 @@ pairwiseCorrPlot <- function (cpg.set, sample.start, sample.end, plot) {
   
   one.t <-t(one.ordered[, sample.start:sample.end])
   
-  correlation<-cor(one.t)
+  correlation<-cor(one.t) # from stats libaray
   
   if (plot == TRUE) {
     require(corrplot)
