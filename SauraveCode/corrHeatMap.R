@@ -1,5 +1,4 @@
-
-
+library("corrplot")
 
 ################ correlation heatmap  
 # Input:  
@@ -12,7 +11,7 @@
 #   correlation heatmap
 
 
-corrHeatMap <- function (methylation.data, sample.start, sample.end, titleinfo){
+corrHeatMap <- function(methylation.data, sample.start, sample.end, titleinfo){
 
   one <- methylation.data
   
@@ -24,7 +23,7 @@ corrHeatMap <- function (methylation.data, sample.start, sample.end, titleinfo){
   correlation<-cor(one.t)  
 
   require (corrplot)
-  corrplot(correlation, method="number", title = titleinfo, mar=c(5,5,5,5))
+  corrplot(correlation, method="number", title = titleinfo, mar=c(5,5,5,5)) # from corrplt
 }
 
 
